@@ -88,7 +88,7 @@ for _, row in future_matches.iterrows():
 
 simulated_df = pd.DataFrame(simulated)  #from list to table
 
-print("\n=== Remaining Matches ===\n")
+print("Remaining Matches")
 for _, row in simulated_df.iterrows():
     print(f'{row["Date"]}: {row["HomeTeam"]} {row["FTHG"]}-{row["FTAG"]} {row["AwayTeam"]}')  #printing results in Python Console
 
@@ -101,7 +101,7 @@ all_matches = pd.concat([
 
 final_table = build_table(all_matches)
 
-print("\n=== Premier League Table 2025/26 ===\n")
+print("Premier League Table 2025/26")
 print(final_table)
 
 def table_notes(pos):
